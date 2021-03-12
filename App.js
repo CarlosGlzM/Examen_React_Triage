@@ -66,9 +66,9 @@ render(){
       <Text style={styles.input}>Respuesta:{this.state.StringFinal}</Text>
       </SafeAreaView>
       
-        <Button title="Pares" onPress={this.onSubmitSerieA} />
-        <Button title="Fibonacci" onPress={this.onSubmitSerieB} />
-        <Button title="Multiplicar" onPress={this.onSubmitSerieC} /> 
+        <Button title="Pares" onPress={this.SerieA} />
+        <Button title="Fibonacci" onPress={this.SerieB} />
+        <Button title="Multiplicar" onPress={this.SerieC} /> 
       </View>
       </>
     );
