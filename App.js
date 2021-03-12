@@ -9,8 +9,7 @@ export default class App extends Component {
     this.state={
       ValorA:2,
       Valor:1,
-      ValorC:1,
-      First:true , 
+      ValorC:1, 
       StringA:' ',
       StringB:' ',
       StringC:' ',
@@ -32,18 +31,13 @@ export default class App extends Component {
  SerieB = () => {
   let a = this.state.x + this.state.Valor;
   let b = this.state.x;
-  if(this.state.First){
+  
     this.state.StringB = `${this.state.x}, ${this.state.Valor}, `
-    let First = false;
-    this.setState({First});
-  }else{
     this.state.StringB += `${a}, `
-  }
   this.setState({
     Valor: b,
     x: a,
   });
-
   var StringFinal = this.state.StringB;
   this.setState({StringFinal});
  } 
